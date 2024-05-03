@@ -1,0 +1,46 @@
+body {
+    width: 800px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+}
+
+header {
+    margin: 10px 0 10px 0;
+}
+
+li {
+    border: 1px red solid;
+}
+
+section {
+    border: 1px red solid;
+    margin: 10px 0 10px 0;
+}
+
+label {
+    border: 1px red solid;
+    margin: 10px 0 10px 0;
+}
+
+article {
+    border: 1px solid red;
+    margin: 10px 0 10px 0;
+}
+
+aside {
+    border: 1px solid red;
+    margin: 10px 0 10px 0;
+}
+
+nav li {
+    display: inline;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+}
