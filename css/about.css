@@ -1,3 +1,41 @@
-.navbar-container {
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+}
+
+nav {
     display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+ul, a {
+    text-decoration: none;
+    list-style: none;
+}
+
+input[type=text] {
+    padding: 5px;
+    font-size: 15px;
+}
+
+.page-links {
+    display: flex;
+    justify-content: center;
+    gap: 100px;
+}
+
+.logo {
+    height: auto;
+    padding-left: 50px;
+}
+
+.search-container {
+    padding-right: 50px;
+}
+
+.search-container button {
+    padding: 5px 10px;
+    font-size: 15px;
+    cursor: pointer;
 }
