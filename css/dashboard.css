@@ -1,41 +1,107 @@
 body {
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Poppins';
     margin: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
 }
 
 nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    margin: 10px 100px 0 100px;
 }
 
 ul, a {
     text-decoration: none;
     list-style: none;
+    color: black;
+    font-weight: bold;
 }
 
-input[type=text] {
-    padding: 5px;
-    font-size: 15px;
+main {
+    height: 100vh;
+    margin: 20px 0 20px 0;
+}
+
+footer {
+    margin: auto;
+    border-top: 2px solid lightgray;
+    padding: 20px 0;
 }
 
 .page-links {
     display: flex;
     justify-content: center;
-    gap: 100px;
+    gap: 50px;
 }
 
 .logo {
     height: auto;
-    padding-left: 50px;
 }
 
 .search-container {
-    padding-right: 50px;
+    background-color: #f7f7f7;
+    width: auto;
+    border-radius: 10px;
 }
 
 .search-container button {
-    padding: 5px 10px;
-    font-size: 15px;
+    padding: 10px 0px 10px 10px;
+    font-size: 20px;
     cursor: pointer;
+    border: none;
+    border-radius: 10px;
+    background-color: #f7f7f7;
+}
+
+.search-bar {
+    padding: 5px;
+    font-size: 15px;
+    border: none;
+    background-color: #f7f7f7;
+    outline: none;
+}
+
+.footer-grid {
+    grid-column-gap: 24px;
+    grid-row-gap: 12px;
+    flex: 1;
+    grid-template-rows: auto;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-auto-columns: 1fr;
+    display: grid;
+}
+
+.footer-col-2{
+    grid-column-gap: 12px;
+    grid-row-gap: 6px;
+    flex-direction: column;
+    grid-template-rows: auto;
+    grid-template-columns: 100%;
+    grid-auto-columns: 100%;
+    align-content: start;
+    align-items: flex-start;
+    justify-items: start;
+    display: flex;
+}
+
+.footer-col-2 i {
+    margin-right: 10px;
+}
+
+.email-subscribe, .subscribe-button {
+    margin-top: 24px;
+    margin-right: 7px;
+    border: none;
+    border-bottom: 2px solid black;
+    outline: none;
+    background-color: white;
+    font-size: 15px;
+}
+
+.subscribe-button {
+    cursor: pointer;
+    height: 22px;
 }
