@@ -1,4 +1,11 @@
+/* * {
+    margin: 0;
+    padding:0%;
+    box-sizing: border-box;
+} */
+
 body {
+    /* background-color: aquamarine; */
     font-family: 'Poppins';
     margin: 0;
     display: flex;
@@ -7,9 +14,11 @@ body {
 }
 
 nav {
+    /* background-color: crimson; */
     display: flex;
     justify-content: space-between;
     align-items: center;
+    /* padding-inline: 4rem; */
     margin: 10px 100px 0 100px;
 }
 
@@ -21,8 +30,11 @@ ul, a {
 }
 
 main {
-    height: 100vh;
+    /* height: 100vh; */
+
+    min-height: 100vh;
     margin: 20px 0 20px 0;
+    /* background-color: rgb(231, 234, 22); */
 }
 
 footer {
@@ -72,9 +84,11 @@ footer {
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-auto-columns: 1fr;
     display: grid;
+    margin: 2rem 4rem;
+    /* background-color: darkolivegreen; */
 }
 
-.footer-col-2{
+.footer-col-2 {
     grid-column-gap: 12px;
     grid-row-gap: 6px;
     flex-direction: column;
@@ -91,7 +105,8 @@ footer {
     margin-right: 10px;
 }
 
-.email-subscribe, .subscribe-button {
+.email-subscribe,
+.subscribe-button {
     margin-top: 24px;
     margin-right: 7px;
     border: none;
@@ -104,4 +119,188 @@ footer {
 .subscribe-button {
     cursor: pointer;
     height: 22px;
+}
+
+
+.background {
+    /* background-color: aquamarine; */
+    /* background-size: cover; */
+    background-position: center;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    position: absolute;
+}
+
+.background img {
+    z-index: -1;
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+
+.superstore {
+    /* background-color: brown; */
+    padding-inline: 2rem;
+    box-sizing: border-box;
+    width: 50%;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.mask-group {
+    /* background-color: aqua; */
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content:flex-end;
+    width: 100%;
+    
+}
+
+
+.overlay {
+    margin-block: 3rem;
+    padding: 30px;
+    display: flex;
+    width: 70%;
+    /* height: 10%; */
+    background-color: #FFF3E3;
+    color: rgb(0, 0, 0);
+}
+
+.content {
+    text-align: left;
+    margin: 0;
+    /* background-color: cornflowerblue; */
+    display: flex;
+    flex-direction: column;
+}
+
+.content h2 {
+    font-size: 6rem;
+    padding: o;
+    margin: 0;
+    color: #B88E2F;
+    display: flex;
+    line-height: 1.2;
+}
+
+.content p {
+    margin: 0;
+    font-size: 15px;
+}
+
+.content button {
+    margin-bottom: 10px;
+    margin: 0;
+    padding: 20px 60px;
+    background-color: #B88E2F;
+    color: rgb(255, 255, 255);
+    border: none;
+    cursor: pointer;
+    margin-top: 10px;
+    width: 12rem;
+    font-weight: bold;
+}
+
+
+.bestseller-container {
+    /* background-color: aqua; */
+    padding-inline: 4rem;
+
+}
+
+.bestseller-header {
+    /* background-color: brown; */
+    margin-bottom: 2rem;
+}
+
+.card-container {
+    /* background-color: #B88E2F; */
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.card {
+    /* background-color: rgb(255, 200, 0); */
+    display: flex;
+    flex-direction: column;
+    max-width: 32%;
+    flex-wrap: wrap;
+
+}
+
+.card .figure {
+    /* background-color: cornflowerblue; */
+    /* width: 100%;
+    height: 60%; */
+    display: flex;
+    width: 100%;
+
+}
+
+.card .figure img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+}
+
+.produt-name {
+    /* background-color: darkgreen; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.produt-name p {
+    font-size: large;
+    font-weight: bold;
+}
+
+.bestseller-container h2 {
+    font-size: 35px;
+    text-align: center;
+    color: #B88E2F;
+    font-family: 'Poppins', sans-serif;
+    margin-bottom: -5px;
+}
+
+.bestseller-container h4 {
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 200;
+    color: #666666;
+    margin: 0%
+}
+
+.specialoffer-container {
+    padding-inline: 4rem;
+}
+
+.specialoffer-container h2 {
+    font-size: 35px;
+    text-align: center;
+    color: #B88E2F;
+    font-family: 'Poppins', sans-serif;
+    margin-bottom: -5px;
+}
+
+.specialoffer-container h4 {
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 200;
+    color: #666666;
+    margin-top: 10px;
+    font-size: 22px;
+}
+
+.specialoffer-header {
+    /* background-color: brown; */
+    margin-bottom: 2rem;
 }
