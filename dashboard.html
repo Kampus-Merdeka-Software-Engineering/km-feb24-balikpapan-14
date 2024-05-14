@@ -1,60 +1,160 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
-    <title>About</title>
-    <link rel="stylesheet" href="css/dashboard.css">
-</head>
-<body>
-    <header>
-        <nav>
-            <img src="img/superstore-logo.png" alt="logo" class="logo">
-            <ul class="page-links">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="product.html">Product</a></li>
-                <li><a href="dashboard.html">Dashboard</a></li>
-            </ul>
-            <div class="search-container">
-                <form action="">
-                    <button type="submit"><i class="fa fa-search"></i></button>
-                    <input type="text" placeholder="Search.." name="Search" class="search-bar">
-                </form>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+        <link
+            href="https://fonts.googleapis.com/css?family=Poppins"
+            rel="stylesheet" />
+        <title>Dashboard</title>
+        <link rel="stylesheet" href="css/dashboard.css" />
+    </head>
+    <body>
+        <header>
+            <nav>
+                <img src="img/superstore-logo.png" alt="logo" class="logo" />
+                <ul class="page-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="product.html">Product</a></li>
+                    <li><a href="dashboard.html">Dashboard</a></li>
+                </ul>
+                <div class="search-container">
+                    <form action="">
+                        <button type="submit">
+                            <i class="fa fa-search"></i>
+                        </button>
+                        <input
+                            type="text"
+                            placeholder="Search.."
+                            name="Search"
+                            class="search-bar" />
+                    </form>
+                </div>
+            </nav>
+        </header>
+        <main>
+            <section>
+                <div class="cards">
+                    <div class="card">
+                        <div class="card-content">
+                            <div class="number">2.3M</div>
+                            <div class="card-name">Total Sales</div>
+                        </div>
+                        <div class="icon-box">
+                            <i class="fa fa-dollar"></i>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-content">
+                            <div class="number">1.2K</div>
+                            <div class="card-name">Total Order</div>
+                        </div>
+                        <div class="icon-box">
+                            <i class="fa fa-send"></i>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-content">
+                            <div class="number">793</div>
+                            <div class="card-name">Total Customer</div>
+                        </div>
+                        <div class="icon-box">
+                            <i class="fa fa-users"></i>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-content">
+                            <div class="number">1.9K</div>
+                            <div class="card-name">Total Product</div>
+                        </div>
+                        <div class="icon-box">
+                            <i class="fa fa-shopping-bag"></i>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section>
+                <div class="charts">
+                    <div class="chart">
+                        <h2>Analytics Sales (by Month)</h2>
+                        <canvas id="lineChart1"></canvas>
+                    </div>
+                    <div class="chart">
+                        <h2>Analytics Sales (by Year)</h2>
+                        <canvas id="lineChart2"></canvas>
+                    </div>
+                </div>
+                <div class="charts2">
+                    <div class="chart">
+                        <h2>Sales by Segment</h2>
+                        <canvas id="pie1"></canvas>
+                    </div>
+                    <div class="chart">
+                        <h2>Sales by Category</h2>
+                        <canvas id="pie2"></canvas>
+                    </div>
+                    <div class="chart">
+                        <h2>Top 5 SubCategory by Sales</h2>
+                        <canvas id="bar"></canvas>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <footer class="footer-grid">
+            <div class="footer-col-2">
+                <h2>Superstore.</h2>
+                <p><b>Get in Touch</b></p>
+                <p>
+                    <i
+                        class="fa fa-map-marker fa-xs"
+                        aria-hidden="true"
+                        class="footer-icon"></i
+                    >8819 United States, CA 90280
+                </p>
+                <p>
+                    <i
+                        class="fa fa-envelope fa-xs"
+                        aria-hidden="true"
+                        class="footer-icon"></i
+                    >superstore@hello.com
+                </p>
+                <p>
+                    <i
+                        class="fa fa-phone fa-xs"
+                        aria-hidden="true"
+                        class="footer-icon"></i
+                    >+1 386-688-3295
+                </p>
             </div>
-        </nav>
-    </header>
-    <main>
-        <section>Lorem ipsum dolor, sit amet consectetur adipisicing elit. In, accusantium est.</section>
-    </main>
-    <footer class="footer-grid">
-        <div class="footer-col-2">
-            <h2>Superstore.</h2>
-            <p><b>Get in Touch</b></p>
-            <p><i class="fa fa-map-marker fa-xs" aria-hidden="true" class="footer-icon"></i>8819 United States, CA 90280</p>
-            <p><i class="fa fa-envelope fa-xs" aria-hidden="true" class="footer-icon"></i>superstore@hello.com</p>
-            <p><i class="fa fa-phone fa-xs" aria-hidden="true" class="footer-icon"></i>+1 386-688-3295</p>
-        </div>
-        <div class="footer-col-2">
-            <h2>Links</h2>
-            <p><a href="index.html">Home</a></p>
-            <p><a href="about.html">About</a></p>
-            <p><a href="product.html">Product</a></p>
-            <p><a href="dashboard.html">Dashboard</a></p>
-        </div>
-        <div class="footer-col-2">
-            <h2>Help</h2>
-            <p><b>Terms & Conditions</b></p>
-            <p><b>Return</b>s</p>
-            <p><b>Privacy Policies</b></p>
-        </div>
-        <div class="footer-col-3">
-            <h2>Newsletter</h2>
-            <input type="email" placeholder="Enter Your Email Address" class="email-subscribe">
-            <button type="submit" class="subscribe-button">SUBSCRIBE</button>
-        </div>
-    </footer>
-</body>
+            <div class="footer-col-2">
+                <h2>Links</h2>
+                <p><a href="index.html">Home</a></p>
+                <p><a href="about.html">About</a></p>
+                <p><a href="product.html">Product</a></p>
+                <p><a href="dashboard.html">Dashboard</a></p>
+            </div>
+            <div class="footer-col-2">
+                <h2>Help</h2>
+                <p><b>Terms & Conditions</b></p>
+                <p><b>Return</b>s</p>
+                <p><b>Privacy Policies</b></p>
+            </div>
+            <div class="footer-col-3">
+                <h2>Newsletter</h2>
+                <input
+                    type="email"
+                    placeholder="Enter Your Email Address"
+                    class="email-subscribe" />
+                <button type="submit" class="subscribe-button">
+                    SUBSCRIBE
+                </button>
+            </div>
+        </footer>
+        <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+        <script src="js/chart.js"></script>
+    </body>
 </html>
