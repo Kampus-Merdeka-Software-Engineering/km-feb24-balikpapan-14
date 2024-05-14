@@ -60,9 +60,21 @@ var pie1 = new Chart(ctx, {
                 labels: {
                     boxWidth: 10
                 }
+            },
+            datalabels: {
+                formatter: (value, context) => {
+                    let sum = context.chart.data.datasets[0].data.reduce((a, b) => a + b, 0);
+                    let percentage = (value / sum * 100).toFixed(2) + "%";
+                    return percentage;
+                },
+                color: '#000',
+                font: {
+                    weight: 'semi bold'
+                }
             }
         }
-    }
+    },
+    plugins: [ChartDataLabels]
 });
 
 // chart 4
@@ -86,9 +98,21 @@ var pie2 = new Chart(ctx, {
                     labels: {
                         boxWidth: 10
                     }
+                },
+                datalabels: {
+                    formatter: (value, context) => {
+                        let sum = context.chart.data.datasets[0].data.reduce((a, b) => a + b, 0);
+                        let percentage = (value / sum * 100).toFixed(2) + "%";
+                        return percentage;
+                    },
+                    color: '#000',
+                    font: {
+                        weight: 'semi bold'
+                    }
                 }
             }
-        }
+        },
+        plugins: [ChartDataLabels]
 });
 
 // chart 5
