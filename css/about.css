@@ -74,7 +74,7 @@ footer {
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-auto-columns: 1fr;
     display: grid;
-    margin: 2rem 4rem;
+    /* margin: 2rem 4rem; */
 }
 
 .footer-col-2{
