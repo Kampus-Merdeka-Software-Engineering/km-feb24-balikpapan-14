@@ -6,11 +6,13 @@ body {
     min-height: 100vh;
 }
 
+
 nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
     margin: 10px 100px 0 100px;
+
 }
 
 ul, a {
@@ -29,7 +31,7 @@ footer {
     margin: auto;
     border-top: 2px solid lightgray;
     padding: 20px 0;
-}
+} 
 
 .page-links {
     display: flex;
@@ -72,6 +74,7 @@ footer {
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-auto-columns: 1fr;
     display: grid;
+    /* margin: 2rem 4rem; */
 }
 
 .footer-col-2{
