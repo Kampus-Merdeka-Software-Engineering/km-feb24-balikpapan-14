@@ -19,6 +19,51 @@ fetch("superstore.json")
             });
         };
 
+        // Function to update the score card values
+        const updateScoreCards = (filteredData) => {
+            const totalSales = filteredData.reduce(
+                (acc, item) => acc + item.Sales,
+                0
+            );
+            const uniqueOrderDates = new Set(
+                filteredData.map((item) => item["Order Date"])
+            );
+            const totalOrder = uniqueOrderDates.size;
+            const totalCustomer = new Set(
+                filteredData.map((item) => item["Customer ID"])
+            ).size;
+            const totalProduct = new Set(
+                filteredData.map((item) => item["Product ID"])
+            ).size;
+
+            const formatNumber = (num) => {
+                if (num >= 1e6) {
+                    return (num / 1e6).toFixed(1) + "M";
+                }
+                if (num >= 1e3) {
+                    return (num / 1e3).toFixed(1) + "K";
+                }
+                return num.toString();
+            };
+
+            const roundedTotalSales = formatNumber(Math.round(totalSales));
+            const roundedTotalOrder = Math.round(totalOrder).toLocaleString();
+            const roundedTotalCustomer =
+                Math.round(totalCustomer).toLocaleString();
+            const roundedTotalProduct =
+                Math.round(totalProduct).toLocaleString();
+
+            document.getElementById("totalSales").innerText = roundedTotalSales;
+            document.getElementById("totalOrder").innerText = roundedTotalOrder;
+            document.getElementById("totalCustomer").innerText =
+                roundedTotalCustomer;
+            document.getElementById("totalProduct").innerText =
+                roundedTotalProduct;
+        };
+
+        // Initial update with all data
+        updateScoreCards(data);
+
         // function to create line chart 1
         const createLineChart1 = (ctx, data, years) => {
             // filtering data by selected years
@@ -209,6 +254,10 @@ fetch("superstore.json")
 
         // function to update charts based on selected years
         const updateCharts = (years) => {
+            // Updating score card with the filtered data
+            const filteredData = processDataByYear(data, years);
+            updateScoreCards(filteredData);
+
             // destroying existing charts
             lineChart1.destroy();
             lineChart2.destroy();
