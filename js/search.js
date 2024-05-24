@@ -95,6 +95,7 @@ isSearch.forEach((product) => {
     const img = document.createElement("img");
     img.src = product.image;
     img.alt = product.name;
+    img.loading = "lazy";
 
     const name = document.createElement("p");
     name.innerHTML = `<b>${product.name}</b>`;
