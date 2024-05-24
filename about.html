@@ -23,11 +23,12 @@
                     <li><a href="dashboard.html">Dashboard</a></li>
                 </ul>
                 <div class="search-container">
-                    <form action="">
+                    <form id="search-form" onsubmit="handleSearch(event)">
                         <button type="submit">
                             <i class="fa fa-search"></i>
                         </button>
                         <input
+                            id="search-bar"
                             type="text"
                             placeholder="Search.."
                             name="Search"
@@ -123,6 +124,7 @@
                     <div class="content">
                         <div class="content-image">
                             <img src="img/ourvalues.png" alt="" />
+
                         </div>
                         <div>
                             <p>
@@ -192,5 +194,6 @@
                 </button>
             </div>
         </footer>
+        <script src="js/searchProduct.js"></script>
     </body>
 </html>
