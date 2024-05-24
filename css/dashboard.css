@@ -13,8 +13,7 @@ nav {
     margin: 10px 100px 0 100px;
 }
 
-ul,
-a {
+ul, a {
     text-decoration: none;
     list-style: none;
     color: black;

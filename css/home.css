@@ -252,7 +252,6 @@ footer {
     height: 60%; */
     display: flex;
     width: 100%;
-
 }
 
 .card .figure img {
@@ -335,6 +334,24 @@ footer {
     max-width: 24%;
     flex-wrap: wrap;
 
+}
+.card-offer:hover {
+    animation: squish 0.5s ease-out;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+@keyframes squish {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(0.95);
+    }
+    70% {
+        transform: scale(1.05);
+    }
+    100% {
+        transform: scale(1) translateY(-5px);
+    }
 }
 
 .card-offer .figure-offer {
