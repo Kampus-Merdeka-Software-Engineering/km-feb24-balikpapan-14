@@ -7,14 +7,21 @@ body {
 }
 
 nav {
+  /* background-color: crimson; */
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin: 10px 100px 0 100px;
+  padding: 5px 25px;
+  /* margin: 10px 100px 0 100px; */
 }
 
-ul,
-a {
+.logo {
+  margin: 5px;
+  height: 4rem;
+  position: relative;
+}
+
+ul, a {
   text-decoration: none;
   list-style: none;
   color: black;
@@ -22,12 +29,9 @@ a {
 }
 
 main {
+
   min-height: 100vh;
-  width: 100%;
   margin: 20px 0 20px 0;
-  /* padding: 10px 0; */
-  display: flex;
-  flex-direction: column;
 }
 
 footer {
@@ -42,9 +46,6 @@ footer {
   gap: 50px;
 }
 
-.logo {
-  height: auto;
-}
 
 .search-container {
   background-color: #f7f7f7;
@@ -69,6 +70,22 @@ footer {
   outline: none;
 }
 
+.hamburger-menu {
+  display: none;
+  flex-direction: column;
+  justify-content: space-around;
+  width: 30px;
+  height: 25px;
+  cursor: pointer;
+}
+
+.bar {
+  width: 100%;
+  height: 4px;
+  background-color: black;
+}
+
+
 .footer-grid {
   grid-column-gap: 24px;
   grid-row-gap: 12px;
@@ -78,6 +95,7 @@ footer {
   grid-auto-columns: 1fr;
   display: grid;
   margin: 2rem 4rem;
+  /* background-color: darkolivegreen; */
 }
 
 .footer-col-2 {
@@ -251,6 +269,7 @@ p {
   border-radius: 0.5rem;
 }
 
+/* Mobile Styles */
 @media screen and (max-width: 600px) {
   .container .content {
     display: flex;
@@ -263,4 +282,154 @@ p {
     justify-content: center;
     align-items: center;
   }
+}
+
+/* Mobile Styles */
+@media screen and (max-width: 600px) {
+  .logo {
+      height: 3rem;
+      position: relative;
+  }
+  .hamburger-menu {
+      display: flex;
+      margin-left: auto;
+  }
+  .hamburger-menu.active .bar:nth-child(1) {
+      transform: translateY(10px) rotate(45deg);
+  }
+  .hamburger-menu.active .bar:nth-child(2) {
+      opacity: 0;
+  }
+  .hamburger-menu.active .bar:nth-child(3) {
+      transform:translateY(-7px) rotate(136deg);
+  }
+  
+  .page-links {
+      margin-bottom: 19px;
+      display: none;
+      flex-direction: column;
+      position: absolute;
+      top: 72px;
+      left: 0;
+      background-color: #f7f7f7;
+      width: 100%;
+      padding: 10px 0;
+      z-index: 2;
+  }
+  .page-links li{
+      margin: 0rem 4rem;
+  }
+  .page-links.active {
+      display: flex;
+  }
+  .search-container {
+      background-color: #f7f7f7;
+      transform: scale(0.8);
+      width: 94px;
+  }
+
+  .search-bar {
+      padding: 1px;
+      font: 15px sans-serif; 
+      border: none;
+      background-color: #f7f7f7;
+      outline: none;
+      max-width: 50%;
+  } 
+
+  .footer-grid {
+      grid-template-columns: 1fr;
+      text-align: center;
+  }
+
+  .footer-col-2, .footer-col-3 {
+      align-items: center;
+      margin-bottom: 20px;
+  }
+
+  .email-subscribe {
+      margin: 0px 40px;
+  }
+  .subscribe-button {
+      margin: 20px 40px;
+  }
+ 
+}
+
+/* Tablet Styles */
+@media (min-width: 601px) and (max-width: 1024px) {
+  .hamburger-menu {
+      display: flex;
+      margin-left: auto;
+      margin-right: 1rem;
+  }
+  .hamburger-menu.active .bar:nth-child(1) {
+      transform: translateY(10px) rotate(45deg);
+  }
+  .hamburger-menu.active .bar:nth-child(2) {
+      opacity: 0;
+  }
+  .hamburger-menu.active .bar:nth-child(3) {
+      transform:translateY(-7px) rotate(136deg);
+  }
+  
+  .page-links {
+      margin-bottom: 19px;
+      display: none;
+      flex-direction: column;
+      position: absolute;
+      top: 90px;
+      left: 0;
+      background-color: #f7f7f7;
+      width: 100%;
+      padding: 10px 0;
+      z-index: 2;
+  }
+  .page-links li{
+      margin: 0rem 4rem;
+  }
+  .page-links.active {
+      display: flex;
+  }
+
+  .footer-grid {
+      grid-template-columns: repeat(2, 1fr);
+      text-align: center;
+  }
+
+  .footer-col-2 {
+      align-items: center;
+      margin-bottom: 20px;
+      
+  }
+
+  .email-subscribe {
+      margin: 0px 40px;
+  }
+  .subscribe-button {
+      margin: 20px 40px;
+  }
+ 
+ 
+}
+
+/* Desktop Styles */
+@media (min-width: 1025px) {
+  .card-container, .card-container-specialoffer {
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: center
+  }
+
+  .footer-grid {
+      grid-template-columns: repeat(4, 1fr);
+  }
+  
+  .email-subscribe {
+      margin-right:60px;
+  }
+  .subscribe-button {
+      margin: 20px 0px;
+  }
+ 
 }

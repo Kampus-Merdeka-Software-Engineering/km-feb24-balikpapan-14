@@ -15,6 +15,11 @@
     <header>
         <nav>
             <img src="img/superstore-logo.png" alt="logo" class="logo" />
+            <div class="hamburger-menu" onclick="toggleMenu()">
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+            </div>
             <ul class="page-links">
                 <li><a href="index.html">Home</a></li>
                 <li><a href="about.html">About</a></li>
@@ -26,7 +31,12 @@
                     <button type="submit">
                         <i class="fa fa-search"></i>
                     </button>
-                    <input id="search-bar" type="text" placeholder="Search.." name="Search" class="search-bar" />
+                    <input
+                        id="search-bar"
+                        type="text"
+                        placeholder="Search.."
+                        name="Search"
+                        class="search-bar" />
                 </form>
             </div>
         </nav>
@@ -146,13 +156,22 @@
         </div>
         <div class="footer-col-3">
             <h2>Newsletter</h2>
-            <input type="email" placeholder="Enter Your Email Address" class="email-subscribe" />
-            <button type="submit" class="subscribe-button">
-                SUBSCRIBE
-            </button>
+            <form id="subscribeForm">
+                <input
+                    type="email"
+                    placeholder="Enter Your Email Address"
+                    class="email-subscribe"
+                    id="emailInput"
+                    required />
+                <button type="submit" class="subscribe-button">
+                    SUBSCRIBE
+                </button>
+            </form>
         </div>
     </footer>
     <script src="js/searchProduct.js"></script>
+    <script src="js/email.js"></script>
+    <script src="js/navbar.js"></script>
 </body>
 
 </html>
