@@ -179,22 +179,26 @@
                 <h2>Help</h2>
                 <p><a href="terms&conditions.html">Terms & Conditions</a></p>
                 <p><a href="returns.html">Returns</a></p>
-            
             </div>
             <div class="footer-col-3">
                 <h2>Newsletter</h2>
-                <input
-                    type="email"
-                    placeholder="Enter Your Email Address"
-                    class="email-subscribe" />
-                <button type="submit" class="subscribe-button">
-                    SUBSCRIBE
-                </button>
+                <form id="subscribeForm">
+                    <input
+                        type="email"
+                        placeholder="Enter Your Email Address"
+                        class="email-subscribe"
+                        id="emailInput"
+                        required />
+                    <button type="submit" class="subscribe-button">
+                        SUBSCRIBE
+                    </button>
+                </form>
             </div>
         </footer>
         <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
         <script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-datalabels"></script>
         <script src="js/chart.js"></script>
         <script src="js/searchProduct.js"></script>
+        <script src="js/email.js"></script>
     </body>
 </html>

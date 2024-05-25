@@ -124,7 +124,6 @@
                     <div class="content">
                         <div class="content-image">
                             <img src="img/ourvalues.png" alt="" />
-
                         </div>
                         <div>
                             <p>
@@ -184,15 +183,20 @@
             </div>
             <div class="footer-col-3">
                 <h2>Newsletter</h2>
-                <input
-                    type="email"
-                    placeholder="Enter Your Email Address"
-                    class="email-subscribe" />
-                <button type="submit" class="subscribe-button">
-                    SUBSCRIBE
-                </button>
+                <form id="subscribeForm">
+                    <input
+                        type="email"
+                        placeholder="Enter Your Email Address"
+                        class="email-subscribe"
+                        id="emailInput"
+                        required />
+                    <button type="submit" class="subscribe-button">
+                        SUBSCRIBE
+                    </button>
+                </form>
             </div>
         </footer>
         <script src="js/searchProduct.js"></script>
+        <script src="js/email.js"></script>
     </body>
 </html>
