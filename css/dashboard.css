@@ -6,14 +6,20 @@ body {
     min-height: 100vh;
 }
 
+header {
+    position: fixed;
+    width: 100vw;
+    z-index: 100;
+}
+
 nav {
-    /* background-color: crimson; */
+    
+    background-color: rgb(255, 255, 255);
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 5px 25px;
-    /* margin: 10px 100px 0 100px; */
-  }
+}
   
   .logo {
     margin: 5px;
@@ -29,10 +35,9 @@ nav {
   }
   
   main {
-  
     min-height: 100vh;
-    margin: 20px 0 20px 0;
-  }
+    margin: 88px 0 20px 0;
+}
   
   footer {
     margin: auto;
