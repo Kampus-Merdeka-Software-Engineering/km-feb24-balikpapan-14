@@ -10,7 +10,7 @@ nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin: 10px 100px 0 100px;
+    padding: 5px 25px;
 }
 
 .logo {

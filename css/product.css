@@ -10,7 +10,7 @@ nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin: 10px 100px 0 100px;
+    padding: 5px 25px;
 }
 
 .logo {
@@ -97,17 +97,22 @@ section h2 {
 .product-hero {
     display: flex;
     position: relative;
-    margin-bottom: 90px;
+    /* margin-bottom: 90px; */
+    
 }
 
 .product-hero img {
     margin: 0 auto;
+    width: 100%;
+    height: 100%; 
 }
 
 .overlay-text {
     position: absolute;
-    color: black;
-    font-size: 70px;
+    color: black;   
+    width: 100%;
+    text-align: center;
+    font-size: 7vw;
     font-weight: 500;
     font-style: italic;
     top: 50%;
@@ -117,13 +122,16 @@ section h2 {
 
 .card-wrapper {
     grid-template-columns: 20% 20% 20% 20%;
-    display: grid;
+    display: flex;
     justify-content: center;
+    gap: 0.9rem;
+    flex-wrap: wrap;
+
 }
 
 .card-container {
-    margin: 0 auto;
     background-color: #F5F6FA;
+    flex-wrap: wrap;
 }
 
 .card-container p {
