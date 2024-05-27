@@ -11,8 +11,9 @@ header {
     width: 100vw;
     z-index: 100;
 }
+
 nav {
-    
+
     background-color: rgb(255, 255, 255);
     display: flex;
     justify-content: space-between;
@@ -24,7 +25,7 @@ nav {
     margin: 5px;
     height: 4rem;
     position: relative;
-  }
+}
 
 ul,
 a {
@@ -32,6 +33,11 @@ a {
     list-style: none;
     color: black;
     font-weight: bold;
+}
+
+ul,
+a:hover {
+    color: #b88e2f;
 }
 
 main {
@@ -95,13 +101,13 @@ section h2 {
     width: 30px;
     height: 25px;
     cursor: pointer;
-  }
-  
-  .bar {
+}
+
+.bar {
     width: 100%;
     height: 4px;
     background-color: black;
-  }
+}
 
 .product-hero {
     display: flex;
@@ -193,20 +199,24 @@ section h2 {
         height: 3rem;
         position: relative;
     }
+
     .hamburger-menu {
         display: flex;
         margin-left: auto;
     }
+
     .hamburger-menu.active .bar:nth-child(1) {
         transform: translateY(10px) rotate(45deg);
     }
+
     .hamburger-menu.active .bar:nth-child(2) {
         opacity: 0;
     }
+
     .hamburger-menu.active .bar:nth-child(3) {
-        transform:translateY(-7px) rotate(136deg);
+        transform: translateY(-7px) rotate(136deg);
     }
-    
+
     .page-links {
         margin-bottom: 19px;
         display: none;
@@ -219,63 +229,71 @@ section h2 {
         padding: 10px 0;
         z-index: 2;
     }
-    .page-links li{
+
+    .page-links li {
         margin: 0rem 4rem;
     }
+
     .page-links.active {
         display: flex;
     }
+
     .search-container {
         background-color: #f7f7f7;
         transform: scale(0.8);
         width: 94px;
     }
-  
+
     .search-bar {
         padding: 1px;
-        font: 15px sans-serif; 
+        font: 15px sans-serif;
         border: none;
         background-color: #f7f7f7;
         outline: none;
         max-width: 50%;
-    } 
-  
+    }
+
     .footer-grid {
         grid-template-columns: 1fr;
         text-align: center;
     }
-  
-    .footer-col-2, .footer-col-3 {
+
+    .footer-col-2,
+    .footer-col-3 {
         align-items: center;
         margin-bottom: 20px;
     }
-  
+
     .email-subscribe {
         margin: 0px 40px;
     }
+
     .subscribe-button {
         margin: 20px 40px;
     }
-   
-  }
-  
-  /* Tablet Styles */
-  @media (min-width: 601px) and (max-width: 1024px) {
+
+}
+
+/* Tablet Styles */
+@media (min-width: 601px) and (max-width: 1024px) {
     .hamburger-menu {
         display: flex;
         margin-left: auto;
         margin-right: 1rem;
     }
+
     .hamburger-menu.active .bar:nth-child(1) {
         transform: translateY(10px) rotate(45deg);
     }
+
     .hamburger-menu.active .bar:nth-child(2) {
         opacity: 0;
     }
+
     .hamburger-menu.active .bar:nth-child(3) {
-        transform:translateY(-7px) rotate(136deg);
+        transform: translateY(-7px) rotate(136deg);
     }
-    
+
     .page-links {
         margin-bottom: 19px;
         display: none;
@@ -288,51 +306,57 @@ section h2 {
         padding: 10px 0;
         z-index: 2;
     }
-    .page-links li{
+
+    .page-links li {
         margin: 0rem 4rem;
     }
+
     .page-links.active {
         display: flex;
     }
-  
+
     .footer-grid {
         grid-template-columns: repeat(2, 1fr);
         text-align: center;
     }
-  
+
     .footer-col-2 {
         align-items: center;
         margin-bottom: 20px;
-        
+
     }
-  
+
     .email-subscribe {
         margin: 0px 40px;
     }
+
     .subscribe-button {
         margin: 20px 40px;
     }
-   
-   
-  }
-  
-  /* Desktop Styles */
-  @media (min-width: 1025px) {
-    .card-container, .card-container-specialoffer {
+
+
+}
+
+/* Desktop Styles */
+@media (min-width: 1025px) {
+
+    .card-container,
+    .card-container-specialoffer {
         flex-direction: row;
         flex-wrap: wrap;
         justify-content: center
     }
-  
+
     .footer-grid {
         grid-template-columns: repeat(4, 1fr);
     }
-    
+
     .email-subscribe {
-        margin-right:60px;
+        margin-right: 60px;
     }
+
     .subscribe-button {
         margin: 20px 0px;
     }
-   
-  }
+
+}
