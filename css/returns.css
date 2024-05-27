@@ -13,9 +13,6 @@ nav {
     padding: 5px 25px;
 }
 
-.logo {
-    height: auto;
-}
 
 ul,
 a {
@@ -172,26 +169,17 @@ li {
 
 
 
-/* Mobile Styles */
-@media screen and (max-width: 600px) {
-    .container .content {
-        display: flex;
-        flex-direction: column;
-    }
-
-    .hero-container {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-    }
-}
 
 /* Mobile Styles */
 @media screen and (max-width: 600px) {
-    .logo {
-        height: 3rem;
-        position: relative;
+    main {
+        margin: 0%;
+    }
+
+    .return {
+        margin: 4rem 5rem;
+        text-align: justify;
+        line-height: 1.0;
     }
 
     .hamburger-menu {
@@ -270,6 +258,10 @@ li {
 
 /* Tablet Styles */
 @media (min-width: 601px) and (max-width: 1024px) {
+
+    main {
+        margin: 0%;
+    }
     .hamburger-menu {
         display: flex;
         margin-left: auto;
@@ -334,12 +326,6 @@ li {
 /* Desktop Styles */
 @media (min-width: 1025px) {
 
-    .card-container,
-    .card-container-specialoffer {
-        flex-direction: row;
-        flex-wrap: wrap;
-        justify-content: center
-    }
 
     .footer-grid {
         grid-template-columns: repeat(4, 1fr);
