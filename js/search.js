@@ -24,6 +24,12 @@ const product = [
         image: "https://firebasestorage.googleapis.com/v0/b/superstore-product.appspot.com/o/sofas.png?alt=media&token=1d797492-6e71-4a57-a5ea-0bdf9664b23e",
     },
     {
+        name: "Chairs",
+        category: "Furniture",
+        price: 4_500_000,
+        image: "https://firebasestorage.googleapis.com/v0/b/superstore-product.appspot.com/o/Chairs2.png?alt=media&token=75c63383-c12e-4c91-8085-383a28913b3a",
+    },
+    {
         name: "Phones",
         category: "Technology",
         price: 9_600_000,
