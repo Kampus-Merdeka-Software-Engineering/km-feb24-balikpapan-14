@@ -345,6 +345,83 @@ footer {
         margin: 20px 40px;
     }
 
+    .cards {
+        display: flex;
+        flex-direction: column;
+        padding: 10px;
+        align-items: center;
+    }
+
+    .card {
+        width: 100%;
+        margin-bottom: 20px;
+        padding: 20px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        background: #FFF;
+        border-radius: 10px;
+        box-shadow: 0 7px 25px rgba(0, 0, 0, 0.08);
+    }
+
+    .card-content {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .number {
+        font-size: 25px;
+    }
+
+    .card-name {
+        font-size: 14px;
+    }
+
+    .icon-box {
+        font-size: 30px;
+        color: #B88E2F;
+    }
+
+    .charts,
+    .charts2 {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        align-items: center;
+    }
+
+    .chart {
+        width: 200%;
+        height: auto !important;
+        margin-bottom: 20px;
+        padding: 10px;
+        box-shadow: 0 7px 25px rgba(0, 0, 0, 0.08);
+        border-radius: 10px;
+        background: #FFF;
+        align-items: center;
+    }
+
+    .chart h2 {
+        font-size: 16px;
+    }
+
+    #lineChart1,
+    #lineChart2 {
+        max-width: 400px;
+        max-height: 300px;
+    }
+
+    #pie1,
+    #pie2 {
+        max-width: 300px;
+        max-height: 200px;
+    }
+
+    #bar {
+        max-width: 500px;
+        max-height: 500px;
+    }
 }
 
 /* Tablet Styles */
