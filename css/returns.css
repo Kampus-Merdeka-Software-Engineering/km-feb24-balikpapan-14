@@ -6,13 +6,25 @@ body {
     min-height: 100vh;
 }
 
+header {
+    position: fixed;
+    width: 100vw;
+    z-index: 100;
+}
 nav {
+    
+    background-color: rgb(255, 255, 255);
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 5px 25px;
 }
 
+.logo {
+    margin: 5px;
+    height: 4rem;
+    position: relative;
+}
 
 ul,
 a {
@@ -28,7 +40,7 @@ a:hover {
 }
 
 main {
-    margin: 10px 100px 0 100px;
+    margin-top:  88px;
 }
 
 footer {
@@ -172,9 +184,11 @@ li {
 
 /* Mobile Styles */
 @media screen and (max-width: 600px) {
-    main {
-        margin: 0%;
+    .logo {
+        height: 3rem;
+        position: relative;
     }
+
 
     .return {
         margin: 4rem 5rem;
@@ -201,15 +215,16 @@ li {
 
     .page-links {
         margin-bottom: 19px;
-        display: none;
         flex-direction: column;
         position: absolute;
-        top: 72px;
+        top: -400%;
         left: 0;
         background-color: #f7f7f7;
         width: 100%;
         padding: 10px 0;
-        z-index: 2;
+        z-index: -2;
+        align-items: center;
+        transition: 0.5s cubic-bezier(0.48, 0.16, 0.53, 0.85);
     }
 
     .page-links li {
@@ -218,6 +233,7 @@ li {
 
     .page-links.active {
         display: flex;
+        top: 100%;
     }
 
     .search-container {
@@ -259,9 +275,6 @@ li {
 /* Tablet Styles */
 @media (min-width: 601px) and (max-width: 1024px) {
 
-    main {
-        margin: 0%;
-    }
     .hamburger-menu {
         display: flex;
         margin-left: auto;
@@ -282,15 +295,16 @@ li {
 
     .page-links {
         margin-bottom: 19px;
-        display: none;
         flex-direction: column;
         position: absolute;
-        top: 90px;
+        top: -400%;
         left: 0;
         background-color: #f7f7f7;
         width: 100%;
         padding: 10px 0;
-        z-index: 2;
+        z-index: -2;
+        align-items: center;
+        transition: 0.5s cubic-bezier(0.48, 0.16, 0.53, 0.85);
     }
 
     .page-links li {
@@ -299,6 +313,7 @@ li {
 
     .page-links.active {
         display: flex;
+        top: 100%;
     }
 
     .footer-grid {

@@ -6,7 +6,14 @@ body {
     min-height: 100vh;
 }
 
+header {
+    position: fixed;
+    width: 100vw;
+    z-index: 100;
+}
 nav {
+    
+    background-color: rgb(255, 255, 255);
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -14,7 +21,9 @@ nav {
 }
 
 .logo {
-    height: auto;
+    margin: 5px;
+    height: 4rem;
+    position: relative;
 }
 
 ul,
@@ -32,7 +41,7 @@ a:hover {
 
 main {
     min-height: 100vh;
-    margin: 20px 0 20px 0;
+    margin:  88px 0 100px;
 }
 
 footer {
@@ -509,15 +518,16 @@ footer {
 
     .page-links {
         margin-bottom: 19px;
-        display: none;
         flex-direction: column;
         position: absolute;
-        top: 72px;
+        top: -400%;
         left: 0;
         background-color: #f7f7f7;
         width: 100%;
         padding: 10px 0;
-        z-index: 2;
+        z-index: -2;
+        align-items: center;
+        transition: 0.5s cubic-bezier(0.48, 0.16, 0.53, 0.85);
     }
 
     .page-links li {
@@ -526,6 +536,7 @@ footer {
 
     .page-links.active {
         display: flex;
+        top: 100%;
     }
 
     .search-container {
@@ -623,15 +634,16 @@ footer {
 
     .page-links {
         margin-bottom: 19px;
-        display: none;
         flex-direction: column;
         position: absolute;
-        top: 90px;
+        top: -400%;
         left: 0;
         background-color: #f7f7f7;
         width: 100%;
         padding: 10px 0;
-        z-index: 2;
+        z-index: -2;
+        align-items: center;
+        transition: 0.5s cubic-bezier(0.48, 0.16, 0.53, 0.85);
     }
 
     .page-links li {
@@ -640,6 +652,7 @@ footer {
 
     .page-links.active {
         display: flex;
+        top: 90%;
     }
 
 
