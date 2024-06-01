@@ -281,14 +281,14 @@ footer {
     border-radius: 10px;
 }
 
-.produt-name {
+.product-name {
     /* background-color: darkgreen; */
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
-.produt-name p {
+.product-name p {
     font-size: large;
     font-weight: bold;
 }
