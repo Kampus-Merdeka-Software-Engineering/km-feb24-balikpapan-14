@@ -1,179 +1,201 @@
 <!DOCTYPE html>
 <html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+        <link
+            href="https://fonts.googleapis.com/css?family=Poppins"
+            rel="stylesheet" />
+        <title>Product</title>
+        <link rel="stylesheet" href="css/product.css" />
+    </head>
 
-<head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
-    <link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet" />
-    <title>Product</title>
-    <link rel="stylesheet" href="css/product.css" />
-</head>
+    <body>
+        <header>
+            <nav>
+                <img src="img/superstore-logo.png" alt="logo" class="logo" />
+                <div class="hamburger-menu" onclick="toggleMenu()">
+                    <div class="bar"></div>
+                    <div class="bar"></div>
+                    <div class="bar"></div>
+                </div>
+                <ul class="page-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="product.html">Product</a></li>
+                    <li><a href="dashboard.html">Dashboard</a></li>
+                </ul>
+                <div class="search-container">
+                    <form id="search-form" onsubmit="handleSearch(event)">
+                        <button type="submit">
+                            <i class="fa fa-search"></i>
+                        </button>
+                        <input
+                            id="search-bar"
+                            type="text"
+                            placeholder="search product.."
+                            name="Search"
+                            class="search-bar" />
+                    </form>
+                </div>
+            </nav>
+        </header>
 
-<body>
-    <header>
-        <nav>
-            <img src="img/superstore-logo.png" alt="logo" class="logo" />
-            <div class="hamburger-menu" onclick="toggleMenu()">
-                <div class="bar"></div>
-                <div class="bar"></div>
-                <div class="bar"></div>
+        <main>
+            <div class="product-hero">
+                <img src="img/product-hero.png" alt="" />
+                <div class="overlay-text">
+                    <p>Our Product</p>
+                </div>
             </div>
-            <ul class="page-links">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="product.html">Product</a></li>
-                <li><a href="dashboard.html">Dashboard</a></li>
-            </ul>
-            <div class="search-container">
-                <form id="search-form" onsubmit="handleSearch(event)">
-                    <button type="submit">
-                        <i class="fa fa-search"></i>
+            <section>
+                <h2>#Furniture</h2>
+                <div class="card-wrapper">
+                    <div class="card-container">
+                        <img src="img/bookcase.png" alt="Bookcase" />
+                        <p><b>Bookcase</b></p>
+                        <p class="category">Furniture</p>
+                        <p><b>Rp 2.500.000</b></p>
+                    </div>
+                    <div class="card-container">
+                        <img src="img/tables.png" alt="Tables" />
+                        <p><b>Tables</b></p>
+                        <p class="category">Furniture</p>
+                        <p><b>Rp 1.050.000</b></p>
+                    </div>
+                    <div class="card-container">
+                        <img src="img/furnishing.png" alt="Furnishing" />
+                        <p><b>Furnishing</b></p>
+                        <p class="category">Furniture</p>
+                        <p><b>Rp 640.000</b></p>
+                    </div>
+                    <div class="card-container">
+                        <img src="img/sofas.png" alt="Sofas" />
+                        <p><b>Sofas</b></p>
+                        <p class="category">Furniture</p>
+                        <p><b>Rp 4.500.000</b></p>
+                    </div>
+                </div>
+            </section>
+            <section>
+                <h2>#Technology</h2>
+                <div class="card-wrapper">
+                    <div class="card-container">
+                        <img src="img/phones.png" alt="Phones" />
+                        <p><b>Phones</b></p>
+                        <p class="category">Technology</p>
+                        <p><b>Rp 9.600.000</b></p>
+                    </div>
+                    <div class="card-container">
+                        <img src="img/copiers.png" alt="Copiers" />
+                        <p><b>Copiers</b></p>
+                        <p class="category">Technology</p>
+                        <p><b>Rp 3.500.000</b></p>
+                    </div>
+                    <div class="card-container">
+                        <img src="img/accessories.png" alt="Accessories" />
+                        <p><b>Accessories</b></p>
+                        <p class="category">Technology</p>
+                        <p><b>Rp 15.500.000</b></p>
+                    </div>
+                    <div class="card-container">
+                        <img src="img/machines.png" alt="Machines" />
+                        <p><b>Machines</b></p>
+                        <p class="category">Technology</p>
+                        <p><b>Rp 5.000.000</b></p>
+                    </div>
+                </div>
+            </section>
+            <section>
+                <h2>#Office Supply</h2>
+                <div class="card-wrapper">
+                    <div class="card-container">
+                        <img src="img/envelopes.png" alt="Envelopes" />
+                        <p><b>Envelopes</b></p>
+                        <p class="category">Office Supply</p>
+                        <p><b>Rp 40.000</b></p>
+                    </div>
+                    <div class="card-container">
+                        <img src="img/paper.png" alt="Paper" />
+                        <p><b>Paper</b></p>
+                        <p class="category">Office Supply</p>
+                        <p><b>Rp 10.000</b></p>
+                    </div>
+                    <div class="card-container">
+                        <img src="img/storages.png" alt="Storages" />
+                        <p><b>Storages</b></p>
+                        <p class="category">Office Supply</p>
+                        <p><b>Rp 700.000</b></p>
+                    </div>
+                    <div class="card-container">
+                        <img src="img/binders.png" alt="Binders" />
+                        <p><b>Binders</b></p>
+                        <p class="category">Office Supply</p>
+                        <p><b>Rp 16.000</b></p>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <footer class="footer-grid">
+            <div class="footer-col-2">
+                <h2>Superstore.</h2>
+                <p>
+                    <b><a href="team.html">Our Team</a></b>
+                </p>
+                <p>
+                    <i
+                        class="fa fa-users fa-xs"
+                        aria-hidden="true"
+                        class="footer-icon"></i
+                    >Team 14 - Section Balikpapan
+                </p>
+                <p>
+                    <i
+                        class="fa fa-book fa-xs"
+                        aria-hidden="true"
+                        class="footer-icon"></i>
+                    Revou
+                </p>
+                <p>
+                    <i
+                        class="fa fa-graduation-cap fa-xs"
+                        aria-hidden="true"
+                        class="footer-icon"></i
+                    >Studi Independen Batch 6
+                </p>
+            </div>
+            <div class="footer-col-2">
+                <h2>Links</h2>
+                <p><a href="index.html">Home</a></p>
+                <p><a href="about.html">About</a></p>
+                <p><a href="product.html">Product</a></p>
+                <p><a href="dashboard.html">Dashboard</a></p>
+            </div>
+            <div class="footer-col-2">
+                <h2>Help</h2>
+                <p><a href="terms&conditions.html">Terms & Conditions</a></p>
+                <p><a href="returns.html">Returns</a></p>
+            </div>
+            <div class="footer-col-3">
+                <h2>Newsletter</h2>
+                <form id="subscribeForm">
+                    <input
+                        type="email"
+                        placeholder="Enter Your Email Address"
+                        class="email-subscribe"
+                        id="emailInput"
+                        required />
+                    <button type="submit" class="subscribe-button">
+                        SUBSCRIBE
                     </button>
-                    <input id="search-bar" type="text" placeholder="search product.." name="Search"
-                        class="search-bar" />
                 </form>
             </div>
-        </nav>
-    </header>
-
-
-    <main>
-        <div class="product-hero">
-            <img src="img/product-hero.png" alt="" />
-            <div class="overlay-text">
-                <p>Our Product</p>
-            </div>
-        </div>
-        <section>
-            <h2>#Furniture</h2>
-            <div class="card-wrapper">
-                <div class="card-container">
-                    <img src="img/bookcase.png" alt="Bookcase" />
-                    <p><b>Bookcase</b></p>
-                    <p class="category">Furniture</p>
-                    <p><b>Rp 2.500.000</b></p>
-                </div>
-                <div class="card-container">
-                    <img src="img/tables.png" alt="Tables" />
-                    <p><b>Tables</b></p>
-                    <p class="category">Furniture</p>
-                    <p><b>Rp 1.050.000</b></p>
-                </div>
-                <div class="card-container">
-                    <img src="img/furnishing.png" alt="Furnishing" />
-                    <p><b>Furnishing</b></p>
-                    <p class="category">Furniture</p>
-                    <p><b>Rp 640.000</b></p>
-                </div>
-                <div class="card-container">
-                    <img src="img/sofas.png" alt="Sofas" />
-                    <p><b>Sofas</b></p>
-                    <p class="category">Furniture</p>
-                    <p><b>Rp 4.500.000</b></p>
-                </div>
-            </div>
-        </section>
-        <section>
-            <h2>#Technology</h2>
-            <div class="card-wrapper">
-                <div class="card-container">
-                    <img src="img/phones.png" alt="Phones" />
-                    <p><b>Phones</b></p>
-                    <p class="category">Technology</p>
-                    <p><b>Rp 9.600.000</b></p>
-                </div>
-                <div class="card-container">
-                    <img src="img/copiers.png" alt="Copiers" />
-                    <p><b>Copiers</b></p>
-                    <p class="category">Technology</p>
-                    <p><b>Rp 3.500.000</b></p>
-                </div>
-                <div class="card-container">
-                    <img src="img/accessories.png" alt="Accessories" />
-                    <p><b>Accessories</b></p>
-                    <p class="category">Technology</p>
-                    <p><b>Rp 15.500.000</b></p>
-                </div>
-                <div class="card-container">
-                    <img src="img/machines.png" alt="Machines" />
-                    <p><b>Machines</b></p>
-                    <p class="category">Technology</p>
-                    <p><b>Rp 5.000.000</b></p>
-                </div>
-            </div>
-        </section>
-        <section>
-            <h2>#Office Supply</h2>
-            <div class="card-wrapper">
-                <div class="card-container">
-                    <img src="img/envelopes.png" alt="Envelopes" />
-                    <p><b>Envelopes</b></p>
-                    <p class="category">Office Supply</p>
-                    <p><b>Rp 40.000</b></p>
-                </div>
-                <div class="card-container">
-                    <img src="img/paper.png" alt="Paper" />
-                    <p><b>Paper</b></p>
-                    <p class="category">Office Supply</p>
-                    <p><b>Rp 10.000</b></p>
-                </div>
-                <div class="card-container">
-                    <img src="img/storages.png" alt="Storages" />
-                    <p><b>Storages</b></p>
-                    <p class="category">Office Supply</p>
-                    <p><b>Rp 700.000</b></p>
-                </div>
-                <div class="card-container">
-                    <img src="img/binders.png" alt="Binders" />
-                    <p><b>Binders</b></p>
-                    <p class="category">Office Supply</p>
-                    <p><b>Rp 16.000</b></p>
-                </div>
-            </div>
-        </section>
-    </main>
-    <footer class="footer-grid">
-        <div class="footer-col-2">
-            <h2>Superstore.</h2>
-            <p><b><a href="team.html">Our Team</a></b></p>
-            <p>
-                <i class="fa fa-map-marker fa-xs" aria-hidden="true" class="footer-icon"></i>8819 United States, CA
-                90280
-            </p>
-            <p>
-                <i class="fa fa-envelope fa-xs" aria-hidden="true" class="footer-icon"></i>superstore@hello.com
-            </p>
-            <p>
-                <i class="fa fa-phone fa-xs" aria-hidden="true" class="footer-icon"></i>+1 386-688-3295
-            </p>
-        </div>
-        <div class="footer-col-2">
-            <h2>Links</h2>
-            <p><a href="index.html">Home</a></p>
-            <p><a href="about.html">About</a></p>
-            <p><a href="product.html">Product</a></p>
-            <p><a href="dashboard.html">Dashboard</a></p>
-        </div>
-        <div class="footer-col-2">
-            <h2>Help</h2>
-            <p><a href="terms&conditions.html">Terms & Conditions</a></p>
-            <p><a href="returns.html">Returns</a></p>
-        </div>
-        <div class="footer-col-3">
-            <h2>Newsletter</h2>
-            <form id="subscribeForm">
-                <input type="email" placeholder="Enter Your Email Address" class="email-subscribe" id="emailInput"
-                    required />
-                <button type="submit" class="subscribe-button">
-                    SUBSCRIBE
-                </button>
-            </form>
-        </div>
-    </footer>
-    <script src="js/searchProduct.js"></script>
-    <script src="js/email.js"></script>
-    <script src="js/navbar.js"></script>
-</body>
-
+        </footer>
+        <script src="js/searchProduct.js"></script>
+        <script src="js/email.js"></script>
+        <script src="js/navbar.js"></script>
+    </body>
 </html>
