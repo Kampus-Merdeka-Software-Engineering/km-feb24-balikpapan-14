@@ -13,7 +13,6 @@ header {
 }
 
 nav {
-    
     background-color: rgb(255, 255, 255);
     display: flex;
     justify-content: space-between;
@@ -42,7 +41,7 @@ a:hover {
 
 main {
     min-height: 100vh;
-    margin:  88px 0 100px;
+    margin: 88px 0 100px;
 }
 
 footer {
@@ -104,7 +103,6 @@ footer {
     grid-auto-columns: 1fr;
     display: grid;
     margin: 2rem 4rem;
-    /* background-color: darkolivegreen; */
 }
 
 .footer-col-2 {
@@ -140,117 +138,15 @@ footer {
     height: 22px;
 }
 
-.background {
-    /* background-color: aquamarine; */
-    /* background-size: cover; */
-    background-position: center;
-    width: 100%;
-    height: 100%;
-    display: flex;
-    justify-content: center;
-    position: absolute;
-}
-
-.background img {
-    z-index: -1;
-    object-fit: cover;
-    width: 100%;
-    height: 100%;
-}
-
-.superstore {
-    /* background-color: brown; */
-    padding-inline: 2rem;
-    box-sizing: border-box;
-    width: 50%;
-    display: flex;
-    align-items: center;
-    flex-wrap: wrap;
-    z-index: 1;
-    /* Pastikan lebih rendah dari tautan */
-    position: relative;
-    /* Tambahkan posisi relatif */
-}
-
-.mask-group {
-    /* background-color: aqua; */
-    position: relative;
-    display: flex;
-    align-items: center;
-    justify-content: flex-end;
-    width: 100%;
-
-}
-
-.overlay {
-    margin-block: 3rem;
-    padding: 30px;
-    display: flex;
-    width: 70%;
-    /* height: 10%; */
-    background-color: #FFF3E3;
-    color: rgb(0, 0, 0);
-    z-index: 1;
-    /* Pastikan lebih rendah dari tautan */
-    position: relative;
-    /* Tambahkan posisi relatif */
-}
-
-.content {
-    text-align: left;
-    margin: 0;
-    /* background-color: cornflowerblue; */
-    display: flex;
-    flex-direction: column;
-}
-
-.content h2 {
-    font-size: 6rem;
-    padding: o;
-    margin: 0;
-    color: #B88E2F;
-    display: flex;
-    line-height: 1.2;
-}
-
-.content p {
-    margin: 0;
-    font-size: 15px;
-}
-
-.content .button {
-    margin: 0;
-    padding: 20px 40px;
-    background-color: #B88E2F;
-    color: rgb(255, 255, 255);
-    border: none;
-    cursor: pointer;
-    margin-top: 10px;
-    width: 5rem;
-    font-weight: bold;
-    font-size: small;
-}
-
-.button:hover {
-    background-color: transparent;
-    color: #B88E2F;
-    border: 2px solid #B88E2F;
-    padding: 18px 38px;
-}
-
-.bestseller-container {
-    /* background-color: aqua; */
+.team-container {
     padding-inline: 4rem;
-
 }
 
-.bestseller-header {
-    /* background-color: brown; */
+.team-header {
     margin-bottom: 2rem;
 }
 
 .card-container {
-    /* background-color: #B88E2F; */
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
@@ -258,42 +154,39 @@ footer {
 }
 
 .card {
-    /* background-color: rgb(255, 200, 0); */
     display: flex;
     flex-direction: column;
-    max-width: 32%;
+    max-width: 17%;
     flex-wrap: wrap;
-
+    margin: 0 30px;
 }
 
 .card .figure {
-    /* background-color: cornflowerblue; */
-    /* width: 100%;
-    height: 60%; */
     display: flex;
     width: 100%;
 }
 
 .card .figure img {
-    object-fit: cover;
-    width: 100%;
-    height: 100%;
+    object-fit: contain;
+    width: 305px;
+    height: 305px;
     border-radius: 10px;
 }
 
-.produt-name {
-    /* background-color: darkgreen; */
+.name-role {
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
 }
 
-.produt-name p {
-    font-size: large;
-    font-weight: bold;
+.role {
+    font-size: 15px;
+    margin-top: 0;
+    margin-bottom: 50px;
 }
 
-.bestseller-container h2 {
+.team-container h2 {
     font-size: 35px;
     text-align: center;
     color: #B88E2F;
@@ -301,182 +194,12 @@ footer {
     margin-bottom: -5px;
 }
 
-.bestseller-container h4 {
+.team-container h4 {
     text-align: center;
     font-family: 'Poppins', sans-serif;
     font-weight: 200;
     color: #666666;
-    margin: 0%
-}
-
-.specialoffer-container {
-    padding-inline: 4rem;
-    /* background-color: aqua; */
-}
-
-.specialoffer-container h2 {
-    font-size: 35px;
-    text-align: center;
-    color: #B88E2F;
-    font-family: 'Poppins', sans-serif;
-    margin-bottom: -5px;
-}
-
-.specialoffer-container h4 {
-    text-align: center;
-    font-family: 'Poppins', sans-serif;
-    font-weight: 200;
-    color: #666666;
-    margin-top: 10px;
-    font-size: 22px;
-}
-
-.specialoffer-header {
-    /* background-color: brown; */
-    margin-bottom: 2rem;
-}
-
-.card-container-specialoffer {
-    /* background-color: #B88E2F; */
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    gap: 0.7rem;
-}
-
-.card-offer {
-    /* background-color: rgb(0, 222, 59); */
-    display: flex;
-    flex-direction: column;
-    max-width: 24%;
-    flex-wrap: wrap;
-
-}
-
-.card-offer:hover {
-    animation: squish 0.5s ease-out;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-}
-
-@keyframes squish {
-    0% {
-        transform: scale(1);
-    }
-
-    50% {
-        transform: scale(0.95);
-    }
-
-    70% {
-        transform: scale(1.05);
-    }
-
-    100% {
-        transform: scale(1) translateY(-5px);
-    }
-}
-
-.card-offer .figure-offer {
-    /* background-color: cornflowerblue; */
-    /* height: 60%;  */
-    display: flex;
-    width: 100%;
-    position: relative;
-
-}
-
-.card-offer .figure-offer img {
-    display: flex;
-    object-fit: cover;
-    width: 100%;
-    height: 100%;
-}
-
-.label-offer {
-    position: absolute;
-    top: 10px;
-    right: 10px;
-    width: 50px;
-    height: 50px;
-}
-
-.label-offer img {
-    width: 100%;
-    height: auto;
-    max-width: 100%;
-    max-height: 100%;
-    object-fit: contain;
-}
-
-.product-name-offer {
-    background: #F5F6FA;
-    display: flex;
-    flex-direction: column;
-    align-items: left;
-    justify-content: space-between;
-    padding: 1rem;
-}
-
-.product-title {
-    font-size: x-large;
-    font-weight: bold;
-    margin-top: 0.1rem;
-    margin-bottom: 0.1rem;
-}
-
-.sort-description-1 {
-    justify-self: left;
-    overflow-wrap: break-word;
-    font-family: 'Poppins';
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 1.5;
-    color: var(--color-gray-3, #898989);
-    margin-bottom: 1.5rem;
-}
-
-.price-container {
-    display: flex;
-    align-items: center;
-    width: 100%;
-    justify-content: space-between;
-}
-
-.current-price {
-    font-size: large;
-    font-weight: bold;
-}
-
-.fix-price {
-    display: inline-block;
-    overflow-wrap: break-word;
-    font-family: 'Poppins';
-    font-size: 14px;
-    text-decoration-line: line-through;
-    color: var(--color-gray-4, #B0B0B0);
-}
-
-.show-more-container {
-    /* background-color: blue; */
-    margin: 2rem;
-    display: flex;
-    bottom: 20px;
-    z-index: 999;
-    justify-content: center;
-}
-
-.show-more-btn {
-    background-color: transparent;
-    border: 2px solid #B88E2F;
-    color: #B88E2F;
-    padding: 10px 20px;
-    font-size: 16px;
-    cursor: pointer;
-}
-
-.show-more-btn:hover {
-    background-color: #B88E2F;
-    color: rgb(255, 246, 246);
+    margin: 0%;
 }
 
 /* Mobile Styles */
@@ -541,35 +264,12 @@ footer {
         max-width: 50%;
     }
 
-    .mask-group {
+    .card-container {
         flex-direction: column;
         align-items: center;
     }
 
-    .superstore {
-        width: 100%;
-        padding: 0;
-    }
-
-    .overlay {
-        width: 90%;
-        padding: 20px;
-        max-width: 60%;
-        margin: auto;
-    }
-
-    .content h2 {
-        font-size: 3rem;
-    }
-
-    .card-container,
-    .card-container-specialoffer {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .card,
-    .card-offer {
+    .card {
         max-width: 100%;
         width: 90%;
         margin-bottom: 20px;
@@ -638,38 +338,13 @@ footer {
         top: 90%;
     }
 
-
-    .mask-group {
-        flex-direction: column;
-        align-items: center;
-        justify-content: flex-end;
-    }
-
-    .superstore {
-        width: 80%;
-    }
-
-    .overlay {
-        width: 70%;
-        padding: 30px;
-        transform: scale(0.8);
-        position: relative;
-        left: 30%;
-    }
-
-    .content h2 {
-        font-size: 4rem;
-    }
-
-    .card-container,
-    .card-container-specialoffer {
+    .card-container {
         flex-direction: row;
         flex-wrap: wrap;
         justify-content: space-around;
     }
 
-    .card,
-    .card-offer {
+    .card {
         max-width: 45%;
         width: 45%;
         margin-bottom: 20px;
@@ -683,7 +358,6 @@ footer {
     .footer-col-2 {
         align-items: center;
         margin-bottom: 20px;
-
     }
 
     .email-subscribe {
@@ -697,8 +371,7 @@ footer {
 
 /* Desktop Styles */
 @media (min-width: 1025px) {
-    .card-container,
-    .card-container-specialoffer {
+    .card-container {
         flex-direction: row;
         flex-wrap: wrap;
         justify-content: center

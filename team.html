@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <title>Home</title>
+    <link rel="stylesheet" href="css/team.css" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap" />
+</head>
+
+<body>
+    <header>
+        <nav>
+            <img src="img/superstore-logo.png" alt="logo" class="logo" />
+            <div class="hamburger-menu" onclick="toggleMenu()">
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+            </div>
+            <ul class="page-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="product.html">Product</a></li>
+                <li><a href="dashboard.html">Dashboard</a></li>
+            </ul>
+            <div class="search-container">
+                <form id="search-form" onsubmit="handleSearch(event)">
+                    <button type="submit">
+                        <i class="fa fa-search"></i>
+                    </button>
+                    <input id="search-bar" type="text" placeholder="search product.." name="Search"
+                        class="search-bar" />
+                </form>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <div class="team-container">
+            <div class="team-header">
+                <h2>Team 14 Balikpapan</h2>
+            </div>
+
+            <div class="card-container">
+                <div class="card">
+                    <div class="figure">
+                        <img src="img/Lingga.png" alt="Almanik Balingga" />
+                    </div>
+                    <div class="name-role">
+                        <p>Almanik Balingga</p>
+                        <p class="role">Data Analytics Mentor</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="figure">
+                        <img src="img/Achiru.png" alt="Achiru Mujahidah" />
+                    </div>
+                    <div class="name-role">
+                        <p>Achiru Mujahidah</p>
+                        <p class="role">Section Manager</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="figure">
+                        <img src="img/Fariz.png" alt="" />
+                    </div>
+                    <div class="name-role">
+                        <p>Fariz Rizky Rizaldy</p>
+                        <p class="role">Software Engineering Mentor</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card-container">
+                <div class="card">
+                    <div class="figure">
+                        <img src="img/Raja Muda Purba.png" alt="" />
+                    </div>
+                    <div class="name-role">
+                        <p>Raja Muda Purba</p>
+                        <p class="role">Project Leader</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="figure">
+                        <img src="img/Nazmi Wardiani.png" alt="" />
+                    </div>
+                    <div class="name-role">
+                        <p>Nazmi Wardiani</p>
+                        <p class="role">Front End & Data Cleaning</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="figure">
+                        <img src="img/Bima Dharma Yahya.png" alt="" />
+                    </div>
+                    <div class="name-role">
+                        <p>Bima Dharma Yahya</p>
+                        <p class="role">Front End & Data Analysis</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="figure">
+                        <img src="img/Rizki Laksana Putra.png" alt="" />
+                    </div>
+                    <div class="name-role">
+                        <p>Rizki Laksana Putra</p>
+                        <p class="role">Front End & Data Analysis</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card-container">
+                <div class="card">
+                    <div class="figure">
+                        <img src="img/Muhammad Nizar Gifari.png" alt="" />
+                    </div>
+                    <div class="name-role">
+                        <p>Muhammad Nizar Gifari</p>
+                        <p class="role">Front End & Data Analysis</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="figure">
+                        <img src="img/Anindita Puspa.png" alt="" />
+                    </div>
+                    <div class="name-role">
+                        <p>Anindita Puspa</p>
+                        <p class="role">Quality Assurance & Data Cleaning</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="figure">
+                        <img src="img/Hilda Ainun.png" alt="" />
+                    </div>
+                    <div class="name-role">
+                        <p>Hilda Ainun Nafisah</p>
+                        <p class="role">Quality Assurance & Data Cleaning</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="figure">
+                        <img src="img/Gina Rahmawati.png" alt="" />
+                    </div>
+                    <div class="name-role">
+                        <p>Gina Rahmawati</p>
+                        <p class="role">Quality Assurance & Data Visualization</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card-container">
+                <div class="card">
+                    <div class="figure">
+                        <img src="img/Mira Laisa Fenar.png" alt="" />
+                    </div>
+                    <div class="name-role">
+                        <p>Mira Laisa Fenar</p>
+                        <p class="role">Pitch Deck & Data Visualization</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="figure">
+                        <img src="img/Wenni Aditya.png" alt="" />
+                    </div>
+                    <div class="name-role">
+                        <p>Wenni Aditya</p>
+                        <p class="role">Pitch Deck & Data Communication</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="figure">
+                        <img src="img/Vilandra Irmalia Rahma.png" alt="" />
+                    </div>
+                    <div class="name-role">
+                        <p>Vilandra Irmalia Rahma</p>
+                        <p class="role">Pitch Deck & Data Communication</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="figure">
+                        <img src="img/Adam Panji Saputra.png" alt="" />
+                    </div>
+                    <div class="name-role">
+                        <p>Adam Panji Saputra</p>
+                        <p class="role">Deployment & Data Visualization</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer-grid">
+        <div class="footer-col-2">
+            <h2>Superstore.</h2>
+            <p><b><a href="team.html">Our Team</a></b></p>
+            <p>
+                <i class="fa fa-map-marker fa-xs" aria-hidden="true" class="footer-icon"></i>8819 United States, CA
+                90280
+            </p>
+            <p>
+                <i class="fa fa-envelope fa-xs" aria-hidden="true" class="footer-icon"></i>superstore@hello.com
+            </p>
+            <p>
+                <i class="fa fa-phone fa-xs" aria-hidden="true" class="footer-icon"></i>+1 386-688-3295
+            </p>
+        </div>
+        <div class="footer-col-2">
+            <h2>Links</h2>
+            <p><a href="index.html">Home</a></p>
+            <p><a href="about.html">About</a></p>
+            <p><a href="product.html">Product</a></p>
+            <p><a href="dashboard.html">Dashboard</a></p>
+        </div>
+        <div class="footer-col-2">
+            <h2>Help</h2>
+            <p><a href="terms&conditions.html">Terms & Conditions</a></p>
+            <p><a href="returns.html">Returns</a></p>
+        </div>
+        <div class="footer-col-3">
+            <h2>Newsletter</h2>
+            <form id="subscribeForm">
+                <input type="email" placeholder="Enter Your Email Address" class="email-subscribe" id="emailInput"
+                    required />
+                <button type="submit" class="subscribe-button">
+                    SUBSCRIBE
+                </button>
+            </form>
+        </div>
+    </footer>
+    <script src="js/searchProduct.js"></script>
+    <script src="js/email.js"></script>
+    <script src="js/navbar.js"></script>
+</body>
+
+</html>
