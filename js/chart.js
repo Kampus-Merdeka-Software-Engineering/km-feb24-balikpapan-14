@@ -81,10 +81,13 @@ fetch("superstore.json")
                 return acc;
             }, {});
 
+            const monthOrder = [
+                "January", "February", "March", "April", "May", "June",
+                "July", "August", "September", "October", "November", "December"
+            ];
+
             // sorting labels (months) in chronological order
-            const labels = Object.keys(salesByMonth).sort(
-                (a, b) => new Date("2000 " + a) - new Date("2000 " + b)
-            );
+            const labels = monthOrder.filter(month => month in salesByMonth);
             const sales = labels.map((month) => salesByMonth[month]);
 
             // creating and returning line chart 1
